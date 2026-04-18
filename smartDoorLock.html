@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME TO HOME</h1>
+
+    <script>
+        let correctPassword = "1234";
+
+function checkPassword() {
+    let p1 = prompt("Enter password:");
+
+    if (p1 === correctPassword) {
+        console.log("Correct password");
+    } else {
+        secondAttempt();
+    }
+}
+
+function secondAttempt() {
+    let p2 = prompt("Incorrect! Try again:");
+
+    if (p2 === correctPassword) {
+        console.log("Correct password");
+    } else {
+        thirdAttempt();
+    }
+}
+
+function thirdAttempt() {
+    let p3 = prompt("Incorrect! Last attempt:");
+
+    if (p3 === correctPassword) {
+        console.log("Correct password");
+    } else {
+        console.log("Incorrect password");
+        console.log("System blocked");
+    }
+}
+checkPassword();
+        
+    </script>
+</body>
+</html>

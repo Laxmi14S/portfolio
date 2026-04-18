@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(56,54,54);
+        }
+        #brandblock, #search{
+            height: 100px;
+            width:400px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:10px
+        }
+        #brandblock>a{
+            color:#ccc;
+            text-decoration: none;
+        }
+        
+        #search{
+            height:90px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+        }
+
+        #search input{
+    padding:8px 12px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+
+#search button{
+    padding:8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid white;
+    background-color: rgb(56,54,54);
+    color:white;
+}
+#brandblock:hover{
+    color:yellow;
+    border-bottom: 2px solid pink;
+}
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="brandblock" style="width: 600px;">
+            <a href="">Brand</a>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Products</a>
+        </div>
+        <div id="search" for="search1">
+            <input type="text" placeholder="search"/>
+            <button>Search</button>
+        </div>
+    </nav>
+</body>
+</html>

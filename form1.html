@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Inside Table</title>
+</head>
+<body>
+
+<h2 align="center">Registration Form</h2>
+
+<form>
+    <style>
+fieldset {
+    width: 600px;              
+    margin: 50px auto;         
+    padding: 20px;
+}
+
+legend {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+</style>
+    <fieldset >
+<table  align="center" cellpadding="2" cellspacing="0" >
+
+    <tr>
+        <td><label>FIRST NAME</label></td>
+        <td><input type="text" name="fname"></td>
+    </tr>
+
+    <tr>
+        <td><label>LAST NAME</label></td>
+        <td><input type="text" name="lname"></td>
+    </tr>
+    <tr>
+        <td><label>Date of Birth</label></td>
+        <td><input type="date" name="dob"></td>
+    </tr>
+
+    <tr>
+        <td><label>GENDER</label></td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </td>
+    </tr>
+    <tr>
+        <td><label>EMAILID</label></td>
+        <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+        <td><label>PHONE NUMBER</label></td>
+        <td><input type="tel" name="phone"></td>
+    </tr>
+
+    <tr>
+        <td><label>ADDRESS</label></td>
+        <td><textarea rows="4" cols="20"></textarea></td>
+    </tr>
+    <tr>
+        <td><label>CITY</label></td>
+        <td><input type="text" name="City"></td>
+    </tr>
+    <tr>
+        <td><label>PINCODE</label></td>
+        <td><input type="number" name="PINCODE">(enter 6 digit pincode)</td>
+    </tr>
+    <tr>
+        <td><label>EMAILID</label></td>
+        <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+        <td><label>STATE</label></td>
+        <td><input type="text" name="state"></td>
+    </tr>
+    <tr>
+        <td><label>COUNTRY</label></td>
+        <td><input type="text" name="country"></td>
+    </tr>
+
+    <tr>
+        <td><label>HOBBIES</label></td>
+        <td>
+            <input type="checkbox"> Dancing
+            <input type="checkbox"> Singing
+            <input type="checkbox"> sleeping
+            <br><br>
+            <input type="checkbox"> others 
+            <input type="text" name="otherhobby">
+        </td>
+    </tr>
+    <tr>
+            <td>Qualification</td>
+            <td>
+                <table  cellpadding="5" cellspacing="0">
+                    <tr>
+                        <th>sl.no</th>
+                        <th>Exam</th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Pass</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    <tr>
+        <td><label>COURSES APPLIED</label></td>
+        <td>
+            <input type="checkbox"> BCA
+            <input type="checkbox"> B.E
+            <input type="checkbox"> B.A
+            <br><br>
+            <input type="checkbox"> others 
+            <input type="text" name="Othercourses">
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+        </td>
+    </tr>
+
+
+
+</table>
+</fieldset>
+</form>
+
+</body>
+</html>
